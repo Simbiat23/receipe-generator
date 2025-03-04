@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Recipe generator</title>
   </head>
   <body>
     <div class="container">
       <header><h1>Welcome to the AI Receipe Generator</h1></header>
       <main>
-        <form>
+        <form id="receipe-generator-form">
           <input
             type="text"
             placeholder="Create your receipe for...."
@@ -21,18 +22,7 @@
           />
           <input type="submit" name="" id="" class="btn" />
         </form>
-        <div class="receipe">
-          Steps
-          <br />
-
-          1. Preheat your oven to 350°F (175°C). Grease and flour two 9-inch
-          round cake pans.
-          <br />
-          2. In a large bowl, whisk together flour, sugar, baking soda, salt,
-          and cocoa powder.
-          <br />
-          3. In another bowl, combine oil, buttermilk, eggs, food coloring, va
-        </div>
+        <div class="receipe" id="receipe"></div>
       </main>
 
       <footer>
@@ -45,6 +35,6 @@
         and hosted on <a href="https://airecipehub.netlify.app/">Netlify</a>
       </footer>
     </div>
-    <script src="style.css"></script>
+    <script src="script.js"></script>
   </body>
 </html>
