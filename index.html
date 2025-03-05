@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Recipe generator</title>
   </head>
   <body>
     <div class="container">
       <header><h1>Welcome to the AI Receipe Generator</h1></header>
       <main>
-        <form id="receipe-generator-form">
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="Create your receipe for...."
@@ -19,6 +20,7 @@
             autocomplete="off"
             required
             class="input-bar"
+            id="user-recipe-input"
           />
           <input type="submit" name="" id="" class="btn" />
         </form>
