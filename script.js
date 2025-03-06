@@ -5,9 +5,6 @@ function displayRecipe(response) {
     .replace(/```html/g, "") // Remove opening code block
     .replace(/```/g, ""); // Remove closing code block
 
-  // Insert cleaned HTML into the page
-  recipeElement.innerHTML = cleanedResponse;
-
   recipeElement.innerHTML = `<div class="recipe-container">${cleanedResponse}</div>`;
 }
 
@@ -18,7 +15,7 @@ function generateRecipe(event) {
     1. Recipe Name in h1 tag within a div element with recipe-name as class name (as a heading)
     2. Ingredients in an h3 tag within a div element with ingredients as class name (as an unordered HTML list )
     3. Instructions in an h3 tag within a div element with instructions as class name (as a numbered HTML list)
-    Format the response in valid HTML for direct display.`;
+    Format the response in valid HTML for direct display, the recipe name being at the top, the ingredients and instructions below the recipe name but side by side`;
 
   let apiKey = "t07aaefccae3394of62526e7dc0c0bad";
 

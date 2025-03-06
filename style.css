@@ -30,6 +30,7 @@ form {
   border-radius: 10px;
   display: flex;
   margin-bottom: 30px;
+  max-width: 600px;
 }
 .input-bar {
   padding: 16px;
@@ -67,13 +68,15 @@ form {
 .recipe-container {
   display: flex;
   flex-wrap: wrap; /* Ensures proper responsiveness */
-  gap: 20px;
+  gap: 30px;
   margin-top: 20px;
   align-items: flex-start; /* Ensures both sections align properly */
   justify-content: space-between;
 }
 .recipe-name {
   text-align: center;
+  display: block;
+  margin: 0 auto;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -87,10 +90,12 @@ form {
 .instructions {
   flex: 1; /* Both sections take equal space */
   background: #fff;
+  margin-right: 10px;
+  gap: 50px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 48%; /* Prevents sections from being too wide */
+  max-width: 45%; /* Prevents sections from being too wide */
 }
 
 .ingredients h3,
