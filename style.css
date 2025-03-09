@@ -2,6 +2,7 @@ body {
   background-image: url(/IMG/7688702.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
 }
 

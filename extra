@@ -1,0 +1,17 @@
+let prompt = `Generate a recipe based on: ${intructionInput.value}. Provide the
+following sections in proper HTML format:
+<h2>Recipe Name</h2>
+<h3>Ingredients:</h3>
+<ul>
+  <li>List each ingredient with quantity</li>
+</ul>
+<h3>Instructions:</h3>
+<ol>
+  <li>Provide clear step-by-step instructions</li>
+</ol>
+Do not include additional text outside of valid HTML tags.`; let prompt =
+`Generate a recipe based on: ${intructionInput.value}.Provide the following in
+separate sections: 1. Recipe Name (as a heading) 2. Ingredients (as an unordered
+HTML list) 3. Instructions (as a numbered HTML list) Format the response in
+valid HTML for direct display and do not include additional text outside of
+valid HTML tags.`;
